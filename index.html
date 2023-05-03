@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03/05</title>
+    
+
+    <style>
+        main {
+           display: flex;
+           display: grid;
+           place-items: center;
+           min-height: 100vh;
+           background-color: rgb(125, 135, 143)         
+        }
+        
+        .div-conteiner {
+            border: 1px solid black;  
+            height: 400px;
+            width: 400px;  
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+     
+        }
+
+        .linha{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+          background-color:#000807;
+        }
+
+        .caixa{
+          width: 100px;
+          height: 100px;
+          margin-right: 8%;
+          background-color: #ffffb3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .estilo {
+            background-color: #6e0d25;
+        }
+
+        button {
+            margin-left: 6%;
+            margin-right: 5%;
+            height: 20px;
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div-conteiner">
+          <div class="linha">
+            <div id="div1" class="caixa">1</div>
+            <div id="div2"class="caixa">2</div>   
+        </div>
+          
+           <div class="linha">
+             <div id="div3"class="caixa">3</div>
+             <div id="div4" class="caixa">4</div>
+           </div>
+
+           <section class="estilo">
+              <button onclick="rosa()">cor 1</button>
+              <button onclick="picker()">cor 2</button>
+              <button onclick="">cor 3</button> 
+              <button onclick="">cor 4</button>
+           </section>
+        </div>
+    </main>
+
+    <script src="botoes.js"></script>
+</body>
+</html>
