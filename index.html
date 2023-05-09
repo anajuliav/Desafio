@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio 03/05</title>
+  <script src="botoes.js" defer></script>
 
 
   <style>
@@ -14,37 +15,75 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: rgb(125, 135, 143)
+      background-color: rgb(125, 135, 143);
+      flex-direction: column;
     }
    
+    .horizontal{
+      width:300px ;
+      height: 300px;
+      border: solid 2px black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      gap: 10px;
+    }
+
+    .quadrados{
+      width: 100px;
+      height: 100px;
+      border: solid 1px black;
+      text-align: center;
+      padding: 20px;
     
+    }
+
+  button{
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 4px;
+  }
+
+  .laranja{
+    background-color: #c75000;
+  }
   
+  .roxo{
+    background-color: purple;
+  }
+
+  .marron{
+    background-color: #621b00;
+  }
+
+ .azul{
+  background-color: blue;
+ }
   </style>
 </head>
 
 <body>
   <main>
-    <section>
     <div class="horizontal">
-      <div>1</div>
-      <div>2</div>
+      <div class="quadrados" id="div1">1</div>
+      <div class="quadrados" id="div2">2</div>
+      <div class="quadrados" id="div3">3</div>
+      <div class="quadrados" id="div4">4</div>
     </div>
 
-    <div class="horizontal">
-      <div>3</div>
-      <div>4</div>
-    </div>
+  <section>
+    <button class="laranja" onclick="laranja()">Laranja</button>
+    <button class="roxo" onclick="roxo()">Roxo</button>
+    <button class="marron" onclick="marron()">Marron</button>
+    <button class="azul" onclick="azul()">azul</button>
   </section>
+
   </main>
 
-  <section class="estilo">
-    <button onclick="laranja()">Lranja</button>
-    <button onclick="roxo()">Roxo</button>
-    <button onclick="marron()">Marron</button>
-    <button onclick="azul()">azul</button>
-  </section>
-
-  <script src="botoes.js"></script>
+  
 </body>
 
 </html>
